@@ -12,7 +12,7 @@ const router = require("./router");
 const app = express();
 const server = http.createServer(app);
 const io = new Server(server, {
-  cors: { origin: "https://devchatapp.vercel.app/", methods: ["GET", "POST"] },
+  cors: { origin: "https://devchatapp.vercel.app", methods: ["GET", "POST"] },
 });
 
 app.use(cors());
